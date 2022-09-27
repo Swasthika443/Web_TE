@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <script>
+        var courses=["dotnet","java","pyth"];
+        for( var i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"<br>");
+        }
+        //push,pop,shift,unshift
+    </script>
+    <script>
+        document.write("<hr>");
+        document.write("shift and unshift");
+        document.write("<br>");
+        var del=courses.shift();
+        document.write(del+"<br>");
+        document.write(courses.length+"<br>");
+        courses.unshift("HTML","CSS","PHP");
+        document.write(courses.length+"<br>");
+         for( var i=0;i<courses.length;i++){
+            document.write(courses[i]+"<br>");
+         }
+         //forin
+         document.write("<hr>");
+         for(var course in courses){
+            document.write(courses[course]"<br>");
+         }
+
+    </script>
+    
+</body>
+</html>

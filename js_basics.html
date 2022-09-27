@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript basics</title>
+    <script type="text/javascript">
+        function msg()
+        {  
+                  alert("welcome to js in head");
+        }
+    </script>
+    <script type="text/js" src="external.html"
+</head>
+<body>
+    <script type="text/javascript">
+        function msg1()
+        {  
+                  alert("welcome to js in body");
+        }
+    </script>
+    <input type="button" value="click" onclick="msg1()"></input>
+    <input type="button" value="click" onclick="msg()"></input>
+    <!-- displauy output-->
+    <!--innerhtml-->
+    <p id="info"></p>
+    <script>
+        document.getElementById("info").innerHTML="i am a message through innerHTML"
+    </script>
+    <!--doc.write-->
+    <script>
+        document.write("i am a message through doc.write");
+    </script>
+    <!--window.alert-->
+    <script>
+        window.alert("i am a message through window.alert");
+    </script>
+    
+     <script>
+        console.log("i am a message through console.log");
+    </script>
+    <br>
+    <!--datatypes-->
+    <script>
+        var empid=10;
+        var empname="jack";
+        var empmob=[54763537,35273527];
+        var empstatus=true;
+        document.write(empname + "s" + "id is " + empid + "<br>");
+        document.write("pri mob number" + empmob[0] +"<br>" + "secondary mob" + empmob[1] + "<br>" );
+    </script>
+    <!--object-->
+    <p id="address"></p>
+    <script>
+        const address = {
+            str_num: 123,
+            city: "bang",
+            pincode: 54322 
+        }
+        document.getElementById("address").innerHTML=address.city + address.str_num + address.pincode
+    </script>
+    <!--events-->
+    <button type="button" onclick="this.innerHTML=Date()">Todays date is? </button>
+    <br>
+    <br>
+    <select onchange="alert('selection changed')">
+       <option>dotnet</option>
+       <option>java</option>
+       <option>python</option>   
+    </select>
+    <br>
+    <br>
+    <input type="text" onkeypress="alert('textentered')">
+    <br>
+    <br>
+    <input type="text" onfocus="focus()" id="name1">
+    <script>
+        function focus()
+        {
+            var name1=document.getElementById('name1');
+            name1.style.backgroundColor='blue';
+            name1.style.color='red';
+        }
+    </script>
+    <br>
+    <br>
+    <p id="hover" onmouseover="hover_func()" onmouseleave="leave()" style="background-Color:aqua"></p>
+    <script>
+        function hover_func()
+        {
+            var a= document.getElementById('hover');
+            a.style.width='200px';
+            a.style.height='30px';
+            a.style.backgroundcolor='red';
+        }
+    </script>
+    <script>
+       function leave()
+        {
+            var a= document.getElementById('hover');
+            a.style.width='100px';
+            a.style.height='30px';
+            a.style.backgroundcolor='pink';
+        }
+    </script>
+    <!--functions-->
+    <input type="button" onclick="login("john", 123)" value="login"><br>
+    <script>
+        function login(username,password)
+        {
+           alert("welcome"+ username);
+        }
+    </script>
+    <!--control-->
+    <script>
+        var a=10,b=3,c=50;
+
+        if((a>b)&&(a>c))
+        {
+            alert("a is greatest");
+        }
+        else if(b>c)
+        {
+            alert("b is greatest");
+        }
+        else{
+            alert("c is greates");
+        }
+    </script>
+    <!--switch-->
+    <script>
+        var course='s';
+        switch(course)
+        {
+            case "vb":
+            alert("vb");
+            break
+            case "js":
+            alert("js");
+            break
+            default:
+            alert("no");
+            break
+       }
+    </script>
+    <!--looping-->
+   <script>
+     document.write("for loop"+"<br>");
+     for(var i=0;i<5;i++){
+        document.write(i+"<br>");
+     }
+   </script>
+
+</body>
+</html>

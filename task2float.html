@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+       box-sizing: border-box;
+    }
+    .parent{
+       width:100%;
+       float:center; 
+    }
+    .header{
+       text-align: center;
+       background-color: red;
+       border: 2px solid pink;
+       color:yellow;
+       padding: 10px;
+    }
+    .left{
+       width: 20%;
+       height: 600px;
+       background-color: blueviolet;
+       border: 2px solid yellowgreen;
+       float: left;
+    }
+    .center{
+       width: 60%;
+       height: 600px;
+       background-color:green;
+       border: 2px solid red;
+       float: left;
+    }
+    .right{
+       width: 20%;
+       height: 600px;
+       background-color: orange;
+       border: 2px solid yellow;
+       float: left;
+    }
+    .footer{
+       text-align: center;
+       background-color: aqua;
+       border: 2px solid darkblue;
+       color: black;
+       padding: 20px;
+    }
+    .vertical{
+       list-style-type: none;
+       margin: 0;
+       margin-top: 20px;
+       padding: 10px;
+       width: 200px;
+       position: fixed;
+       overflow: auto;
+       height: 100%;
+    }
+    li a.verticalnav{
+       display: block;
+       color: aqua;
+       text-align: left;
+       padding: 5px 5px;
+       text-decoration: none;
+       font-size: larger;
+    }
+    li a.verticalnav:hover{
+       background-color: chocolate;
+    }
+    #active{
+       background-color: yellowgreen;
+    }
+    p::first-letter{
+       color: blue;
+       font-size: 25px;
+       font-weight: bold;
+    }
+    p::first-line{
+       color: coral;
+    }
+    p::selection{
+       color: indianred;
+       background-color: greenyellow;
+    }
+    ::marker{
+       color: lightgreen;
+    }
+    body{
+       background-image: url("image.jpg");
+       background-attachment: fixed;
+       background-size: cover;
+    }
+
+   .transition{
+       width: 100px;
+       height: 100px;
+       transition: width 2s,height 2s, transform 1s;
+   }
+    .transition:hover{
+       width: 300px;
+       height: 200px;
+       transform: rotate(360);
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="header">
+            <h2>Online training</h2>
+        </div>
+         <div>
+            <!--vertical navigation-->
+          <div class="left">
+               <ul class="vertical">
+                <li ><a id="active" class="verticalnav" herf="index.html" target="_blank">HTML Basics</a></li>
+                <li><a class="verticalnav" href="registrationform.html" target="_blank">registration form tags</a></li>
+                <li><a class="verticalnav">css types</a></li>
+                <li><a class="verticalnav" href="selectors.html" target="_blank">css selectors</a></li>
+                <li><a class="verticalnav">css border properties</a></li>
+                <li><a class="verticalnav">css float</a></li>
+                <li><a class="verticalnav">css animation</a></li>
+                <li><a class="verticalnav">css text properties</a></li>
+                <li><a class="verticalnav">css navigation</a></li>
+                <li><a class="verticalnav">css transition</a></li>
+                <li><a class="verticalnav">css media queries</a></li>
+               </ul>
+
+          </div>
+            <!--float property with image-->
+            <div class="center">
+            <p><img src="image.jpg" atl="HTML" height="500px" width="900px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque perspiciatis voluptas, culpa, eos quod qui commodi laboriosam soluta ea ipsa ex! Nihil, asperiores eum. Eaque totam voluptatibus magni autem similique.</p><hr>
+            <!--<p><img src="image.jpg" atl="HTML" height="100px" width="100px" style="float:left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque perspiciatis voluptas, culpa, eos quod qui commodi laboriosam soluta ea ipsa ex! Nihil, asperiores eum. Eaque totam voluptatibus magni autem similique.</p><hr>
+            <p><img src="image.jpg" atl="HTML" height="100px" width="100px" style="float:right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque perspiciatis voluptas, culpa, eos quod qui commodi laboriosam soluta ea ipsa ex! Nihil, asperiores eum. Eaque totam voluptatibus magni autem similique.</p><br>-->
+            </div>
+            <div class="right">
+                <iframe width="250" height="245" style="margin-left:20px;margin-top:20px;"src="https://youtube.com/embed/gbtvJkXGDYg"></iframe>
+                <iframe width="250" height="245" style="margin-left:20px;margin-top:20px;"src="https://youtube.com/embed/gbtvJkXGDYg"></iframe>
+        </div>
+         </div>
+        <div class="footer">
+                <h2>&copy; www.abcshopping.com</h2>
+                <h3>contact</h3>
+                <ul style="text-align:left">
+                    <li>1296750291</li>
+                    <li>375920379</li>
+            </ul><br>
+            <img class="transition" src="image1.jpg" height="100px" width="100px" alt="css">
+        </div>
+    </div> 
+    
+</body>
+</html>

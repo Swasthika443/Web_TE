@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        {
+            box-sizing:border_box;
+        }
+        .parent{
+            width:90%;
+            float:center;
+        }
+        .header{
+            text-align: center;
+            background-color: bisque;
+            border: 2px solid brown;
+            color:azure
+            padding:10px;
+        }
+        .left{
+            width: 20%;
+            height:600px;
+            background-color:cornflowerblue;
+            border: 2px solid darkblue;
+            float:left;
+        }
+        .center{
+            width: 60%;
+            height:600px;
+            background-color:rgb(red, green, blue);
+            border: 2px solid rgb(125, 125, 173);
+            float:left;
+        }
+        .right{
+            width: 20%;
+            height:600px;
+            background-color:aqua;
+            border: 2px solid hotpink;
+            float:left;
+        }
+        .footer{
+            text-align: center;
+            background-color: rgb(225, 219, 211);
+            border: 2px solid rgb(50, 42, 165);
+            color:azure
+            padding: 10px;
+        }
+        .vertical{
+            list-style-type: none;
+            margin:0;
+            margin-top: 20px;
+            padding:10px;
+            width:200px;
+            position: fixed;
+            overflow:auto;
+            height:100%;
+       }
+       li a.verticalnav{
+        display:block;
+        color:darkblue;
+        text-align: left;
+       }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+            <h2>E-COMMERCE WEBSITE</h2>
+        </div>
+        <div>       
+            <div class="left">
+                 <ul class="vertical">
+                    <li><a class="verticalnav">css borders</a></li>
+                    <li><a class="verticalnav">css selectors</a></li>
+                 </ul>
+            </div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </div>
+            <div class="footer">
+               <h2>&copy;www.abcshoppinhg.com</h2>
+             </div>
+    </div>
+    
+</body>
+</html>
